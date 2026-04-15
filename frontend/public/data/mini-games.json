@@ -1,0 +1,28 @@
+{
+  "guessAlgorithm": [
+    {
+      "id": 1,
+      "prompt": "This algorithm splits data with yes/no questions and forms a tree of decisions.",
+      "options": ["K-Means", "Decision Tree", "Linear Regression", "Naive Bayes"],
+      "correctIndex": 1
+    },
+    {
+      "id": 2,
+      "prompt": "This model predicts continuous numeric values using a weighted line or plane.",
+      "options": ["Linear Regression", "KNN Classifier", "DBSCAN", "Apriori"],
+      "correctIndex": 0
+    },
+    {
+      "id": 3,
+      "prompt": "This approach groups data points into K clusters by minimizing distance to centroids.",
+      "options": ["Random Forest", "K-Means", "Logistic Regression", "PCA"],
+      "correctIndex": 1
+    }
+  ],
+  "classificationChallenge": [
+    { "id": "c1", "text": "Win a free iPhone! Click this suspicious link now.", "label": "spam" },
+    { "id": "c2", "text": "Team meeting rescheduled to 3 PM tomorrow.", "label": "not-spam" },
+    { "id": "c3", "text": "URGENT: Verify your bank account password immediately.", "label": "spam" },
+    { "id": "c4", "text": "Your monthly electricity bill is attached.", "label": "not-spam" }
+  ]
+}

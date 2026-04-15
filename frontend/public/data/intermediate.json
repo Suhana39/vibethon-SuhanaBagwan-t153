@@ -1,0 +1,32 @@
+{
+  "slug": "intermediate",
+  "title": "Intermediate: Model Building and Tuning",
+  "description": "Move from concepts to practical model design, validation, and iterative improvement.",
+  "sections": [
+    {
+      "id": "i1",
+      "title": "Feature Engineering",
+      "intro": "Feature engineering transforms raw data into useful signals that improve model learning.",
+      "example": "For ride pricing, engineered features could include rush-hour flag, trip distance bucket, and weather category.",
+      "exercise": "Pick one dataset idea and propose two engineered features that could improve performance."
+    },
+    {
+      "id": "i2",
+      "title": "Train / Validation / Test Split",
+      "intro": "A validation set helps tune model choices while the test set remains untouched for final evaluation.",
+      "example": "You compare logistic regression and random forest using validation scores, then report test score once.",
+      "exercise": "Explain why tuning directly on test data can produce misleading performance."
+    },
+    {
+      "id": "i3",
+      "title": "Bias-Variance Tradeoff",
+      "intro": "Underfitting has high bias, overfitting has high variance. Good models balance both.",
+      "example": "A very deep tree can memorize training data, scoring high in training but poor in unseen examples.",
+      "exercise": "Give one strategy to reduce overfitting without collecting more data."
+    }
+  ],
+  "references": [
+    "Adapted from public educational resources on model validation and overfitting/underfitting.",
+    "Adapted from openly available tutorial content on feature engineering basics."
+  ]
+}

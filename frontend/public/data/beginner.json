@@ -1,0 +1,32 @@
+{
+  "slug": "beginner",
+  "title": "Beginner: Intro to Machine Learning",
+  "description": "Build strong fundamentals in datasets, supervised learning, and model evaluation.",
+  "sections": [
+    {
+      "id": "b1",
+      "title": "What is Machine Learning?",
+      "intro": "Machine learning is a branch of AI where systems learn patterns from data instead of following only hand-written rules.",
+      "example": "Spam filtering models learn from labeled emails (spam/not spam) and predict labels for new emails.",
+      "exercise": "List three daily apps that use prediction (for example: maps, recommendations, spam filters)."
+    },
+    {
+      "id": "b2",
+      "title": "Training Data and Labels",
+      "intro": "In supervised learning, each example has input features and a known output label used to teach a model.",
+      "example": "House-price data includes area, location, and age as features, and final sale price as the label.",
+      "exercise": "For a movie-rating predictor, identify possible features and the target label."
+    },
+    {
+      "id": "b3",
+      "title": "Evaluation Basics",
+      "intro": "A model must be tested on unseen data. Metrics such as accuracy, precision, recall, and F1 help evaluate quality.",
+      "example": "In medical screening, recall is often prioritized so fewer true cases are missed.",
+      "exercise": "Write one scenario where high precision matters more than high recall."
+    }
+  ],
+  "references": [
+    "Adapted from public educational summaries in Wikipedia (Machine learning, Supervised learning).",
+    "Adapted from openly accessible tutorials and documentation-style ML introductions."
+  ]
+}
