@@ -1,33 +1,73 @@
-# vibethon-SuhanaBagwan-t153
+# MindML - Learning Platform
 
+MindML is a hackathon-ready full-stack scaffold for learning AI/ML in a clean and practical way. It includes user auth, a working Intro to ML module, quiz assessment, progress dashboard, and instructional pages.
 
-# MindML
+## Tech Stack
 
-## Overview
-**MindML** is a full‑stack web application designed to make Artificial Intelligence and Machine Learning (AIML) learning engaging, practical, and accessible. The platform combines structured learning modules, interactive coding practice, quizzes, mini‑games, and real‑world simulations in a simple, non‑eye‑straining interface.  
+- Frontend: React + TailwindCSS + Vite
+- Backend: Node.js + Express
+- Database: MongoDB + Mongoose
+- Authentication: JWT
 
-The goal is to help learners progress step by step while keeping the experience fun, approachable, and easy to use.
+## Features Included
 
----
+- Email/password registration and login
+- Intro to ML learning module (working content API + UI)
+- Quiz with instant feedback and score submission
+- Progress dashboard with modules, streak, badges, leaderboard points
+- Instructions page and disclaimer page
+- Soft neutral responsive theme for desktop/tablet/mobile
 
-## Features
-- **Learning Modules**: Beginner → Intermediate → Advanced (Intro to ML fully implemented).  
-- **Interactive Playground**: In‑browser Python editor for hands‑on practice.  
-- **Quizzes**: Module‑wise MCQs with instant feedback.  
-- **Mini‑Games**: Simple visual games to explain ML concepts.  
-- **Simulations**: Small demos (e.g., spam detection).  
-- **Progress Dashboard**: Track modules, scores, coding activity.  
-- **Gamification**: Badges, streaks, leaderboard.  
-- **Instructions Page**: Clear guide on how to use the platform.  
-- **Disclaimer Page**: “For educational purposes only.”  
-- **Responsive Design**: Works on desktop, tablet, mobile with a clean, non‑eye‑straining theme.  
-- **User Authentication** *(planned)*: Secure login/registration with JWT will be added later.
+## Folder Structure
 
----
+- `frontend` - React app
+- `backend` - Express API
 
- Tech Stack
-- **Frontend**: React + TailwindCSS  
-- **Backend**: Node.js/Express  
-- **Database**: MongoDB  
-- **Authentication**: JWT *(to be implemented)*  
+## Setup
 
+### 1) Backend
+
+```bash
+cd backend
+cp .env.example .env
+npm install
+npm run dev
+```
+
+Update `backend/.env`:
+
+```env
+PORT=5000
+MONGODB_URI=mongodb://127.0.0.1:27017/mindml
+JWT_SECRET=replace_with_secure_secret
+```
+
+### 2) Frontend
+
+```bash
+cd frontend
+cp .env.example .env
+npm install
+npm run dev
+```
+
+Default frontend URL: `http://localhost:5173`
+
+## API Endpoints
+
+- `POST /api/auth/register`
+- `POST /api/auth/login`
+- `GET /api/content/module/intro-to-ml`
+- `GET /api/progress/dashboard` (auth required)
+- `POST /api/progress/quiz-result` (auth required)
+
+## Demo Flow
+
+1. Register/login.
+2. Open `Module` and read Intro to ML concepts.
+3. Attempt quiz and submit.
+4. Open dashboard to view updated progress and badges.
+
+## Disclaimer
+
+For educational purposes only.
