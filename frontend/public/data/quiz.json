@@ -1,0 +1,129 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "level": "beginner",
+      "question": "What best describes supervised learning?",
+      "options": [
+        "Learning without any labeled examples",
+        "Learning from input-output labeled data",
+        "Randomly guessing outputs",
+        "Only optimizing model speed"
+      ],
+      "correctIndex": 1,
+      "explanation": "Supervised learning trains on labeled examples to map inputs to known outputs."
+    },
+    {
+      "id": 2,
+      "level": "beginner",
+      "question": "Which metric is often important when missing a true positive is costly?",
+      "options": ["Recall", "Model size", "Latency", "Learning rate"],
+      "correctIndex": 0,
+      "explanation": "Recall measures how many true positives are captured."
+    },
+    {
+      "id": 3,
+      "level": "beginner",
+      "question": "Why keep a separate test set?",
+      "options": [
+        "To make training faster",
+        "To estimate generalization on unseen data",
+        "To store labels permanently",
+        "To replace validation"
+      ],
+      "correctIndex": 1,
+      "explanation": "The test set gives a more realistic estimate of performance on new data."
+    },
+    {
+      "id": 4,
+      "level": "intermediate",
+      "question": "Feature engineering mainly helps by:",
+      "options": [
+        "Reducing all data to one column",
+        "Removing the need for evaluation",
+        "Creating more useful model inputs",
+        "Guaranteeing 100% accuracy"
+      ],
+      "correctIndex": 2,
+      "explanation": "Better features often improve model signal and performance."
+    },
+    {
+      "id": 5,
+      "level": "intermediate",
+      "question": "What is a common sign of overfitting?",
+      "options": [
+        "Low train and low test performance",
+        "High train performance and low test performance",
+        "Equal train/test performance with low variance",
+        "No change in metrics"
+      ],
+      "correctIndex": 1,
+      "explanation": "Overfitting occurs when a model learns training details that do not generalize."
+    },
+    {
+      "id": 6,
+      "level": "intermediate",
+      "question": "Validation data is primarily used to:",
+      "options": [
+        "Finalize business KPIs",
+        "Tune model/hyperparameter choices",
+        "Replace test data",
+        "Store backups"
+      ],
+      "correctIndex": 1,
+      "explanation": "Validation guides model selection before final testing."
+    },
+    {
+      "id": 7,
+      "level": "advanced",
+      "question": "Dropout in neural networks is used to:",
+      "options": [
+        "Increase model memory permanently",
+        "Reduce overfitting by random neuron deactivation during training",
+        "Skip all backpropagation",
+        "Normalize all outputs to zero"
+      ],
+      "correctIndex": 1,
+      "explanation": "Dropout is a regularization technique."
+    },
+    {
+      "id": 8,
+      "level": "advanced",
+      "question": "Model drift refers to:",
+      "options": [
+        "A UI theme change",
+        "A shift where real-world data patterns change over time",
+        "A bug in plotting code",
+        "Faster training loops"
+      ],
+      "correctIndex": 1,
+      "explanation": "Drift can degrade deployed model performance and requires monitoring."
+    },
+    {
+      "id": 9,
+      "level": "advanced",
+      "question": "Which is a key post-deployment practice?",
+      "options": [
+        "Never logging predictions",
+        "Ignoring latency",
+        "Monitoring performance and retraining when needed",
+        "Deleting old model versions immediately"
+      ],
+      "correctIndex": 2,
+      "explanation": "Monitoring and retraining maintain production quality."
+    },
+    {
+      "id": 10,
+      "level": "mixed",
+      "question": "Which option is NOT a typical ML workflow stage?",
+      "options": [
+        "Data preparation",
+        "Model training/evaluation",
+        "Deployment and monitoring",
+        "Skipping validation always"
+      ],
+      "correctIndex": 3,
+      "explanation": "Skipping validation usually leads to poor reliability."
+    }
+  ]
+}

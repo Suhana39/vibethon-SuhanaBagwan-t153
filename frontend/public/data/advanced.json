@@ -1,0 +1,32 @@
+{
+  "slug": "advanced",
+  "title": "Advanced: Deep Learning and Deployment",
+  "description": "Understand neural networks, model deployment patterns, and responsible monitoring.",
+  "sections": [
+    {
+      "id": "a1",
+      "title": "Neural Network Building Blocks",
+      "intro": "Neural networks stack layers of weighted computations and non-linear activations to learn complex patterns.",
+      "example": "An image classifier may use convolutional layers to detect edges, textures, then object-level structures.",
+      "exercise": "Describe in simple words what an activation function adds compared to linear-only layers."
+    },
+    {
+      "id": "a2",
+      "title": "Optimization and Regularization",
+      "intro": "Gradient-based optimization updates weights. Regularization methods (dropout, weight decay) improve generalization.",
+      "example": "Dropout randomly disables neurons during training to reduce dependence on specific feature paths.",
+      "exercise": "Name one sign in training logs that suggests your model is overfitting."
+    },
+    {
+      "id": "a3",
+      "title": "Deployment and Monitoring",
+      "intro": "Production ML requires versioning, latency checks, drift monitoring, and feedback loops.",
+      "example": "A fraud model can degrade if customer behavior changes; drift alerts trigger model retraining.",
+      "exercise": "List two metrics you would monitor after deploying a model API."
+    }
+  ],
+  "references": [
+    "Adapted from open deep-learning concepts in public educational material (including Wikipedia entries).",
+    "Adapted from publicly available MLOps deployment and monitoring primers."
+  ]
+}
